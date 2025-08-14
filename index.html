@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Text Summarizer</title>
+  <style>
+   
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Text Summarizer and Information Extractor</h1>
+      <p>Paste messy text. Get clean summaries and structured data (emails, dates, amounts) in seconds — all in your browser.</p>
+    </div>
+    <div class="hero-image">
+      <img src="https://i.pinimg.com/736x/9f/51/bb/9f51bbf5bf5572bad048888fddf7c562.jpg" alt="Illustration">
+    </div>
+  </section>
+
+  <!-- Tabs -->
+  <div class="tabs">
+  <div class="tabsummarize">Summarize</div>
+   <div class="tabextract active">Extract</div>
+</div>
+
+
+  <!-- Tool Section -->
+  <div class="tool-section">
+    <div class="card">
+      <h3>Paste text</h3>
+      <textarea id="text-input" placeholder="Paste or type your messy text here..."></textarea>
+
+    <div class="buttons">
+        <button id="summarize-btn" class="btn primary">Summarize Text</button>
+      <button id="bullet-btn" class="bullet">Bullets</button>
+    </div>
+
+    </div>
+    <div class="card">
+      <div class="summary-header">
+        <h3>Summary</h3>
+        <button class="copy-btn">Copy</button>
+      </div>
+      <div id="summary-output" class="summary-box">Your summary will appear here.</div>
+    </div>
+  </div>
+   <script type="module" src="main.js"></script>
+</body>
+</html>

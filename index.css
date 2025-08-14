@@ -1,0 +1,176 @@
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #f9fafb, #ffffff);
+    }
+
+    /* Hero Section */
+    .hero {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+    }
+    .hero-text {
+      flex: 1;
+    }
+    .hero-text h1 {
+      font-size: 3.0rem;
+      font-weight: bold;
+      color: #111827;
+      margin-bottom: 1rem;
+    }
+    .hero-text p {
+      font-size: 1.1rem;
+      color: #4b5563;
+      margin-bottom: 1.5rem;
+    }
+    .button-group {
+      display: flex;
+      gap: 1rem;
+    }
+    .btn {
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+    .btn.primary {
+      background: linear-gradient(to right, #9333ea, #3b82f6);
+      color: white;
+    }
+    .bullet{
+      background: white;
+      color:black;
+      border-radius: 10px;
+      padding: 5px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .btn.secondary {
+      background-color: #f3f4f6;
+      color: #111827;
+    }
+    .buttons{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #f9fafb;
+  padding: 1rem;
+    } 
+
+    /* Hero image */
+    .hero-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+    .hero-image img {
+      width: 300px;
+      border-radius: 8px;
+    }
+
+    /* Tabs */
+ .tabs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #f9fafb;
+  padding: 1rem;
+}
+
+.tabextract,
+.tabsummarize {
+  padding: 0.75rem 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  
+   background: #2563eb;
+  color: #374151;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+/* Active state */
+.tabextract.active,
+.tabsummarize.active {
+  background: rgb(250, 248, 248);
+  color:gray;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+}
+
+/* Hover effect */
+.tabextract:hover,
+.tabsummarize:hover {
+  background: #e5e7eb;
+  transform: scale(1.03);
+}
+
+/* Mobile friendly */
+@media (max-width: 500px) {
+  .tabs {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+    /* Tool Section */
+    .tool-section {
+      max-width: 1200px;
+      margin: 2rem auto;
+      display: flex;
+      gap: 1.5rem;
+      padding: 0 1.5rem;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: white;
+      flex: 1;
+      min-width: 280px;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+    }
+    .card textarea {
+      flex: 1;
+      min-height: 150px;
+      padding: 0.75rem;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      resize: none;
+    }
+    .card .btn {
+      margin-top: 1rem;
+    }
+    .summary-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .copy-btn {
+      background: none;
+      border: none;
+      color: #2563eb;
+      cursor: pointer;
+    }
+    .summary-box {
+      margin-top: 1rem;
+      padding: 0.75rem;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      background: #f9fafb;
+      flex: 1;
+    }
